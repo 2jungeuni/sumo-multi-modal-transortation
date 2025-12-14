@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-13 23:52:49.690347 by osmWebWizard.py UNKNOWN
+<configuration>
+    <net-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm.net.xml.gz"/>
+    <ptlines-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_ptlines.xml"/>
+    <ptstops-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_stops.add.xml"/>
+    <output-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_pt.rou.xml"/>
+    <stopinfos-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/stopinfos.xml"/>
+    <routes-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/vehroutes.xml"/>
+    <trips-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_subway_5:0" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="68.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_F:1" color="255,99,25" edges="554387911" >
+        <stop busStop="7535669386" duration="20" until="63.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_5:1" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="45.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_JSQ–33_via_HOB:0" edges="813712317" >
+        <stop busStop="5551785165" duration="20" until="42.0"/> <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="20" until="106.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_5:2" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="34.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_5:3" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="63.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_F:0" color="255,99,25" edges="554387916" >
+        <stop busStop="5551785167" duration="20" until="43.0"/> <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="20" until="101.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_JSQ–33_via_HOB:1" edges="591434572" >
+        <stop busStop="5404334152" duration="20" until="43.0"/> <!-- 9th Street -->
+        <stop busStop="7509382448" duration="20" until="97.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_4:0" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="103.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_4:1" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="44.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_N:0" color="252,204,10" edges="817381415" >
+        <stop busStop="7633689324" duration="20" until="46.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="20" until="109.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_N:1" color="252,204,10" edges="817415225" >
+        <stop busStop="7656750825" duration="20" until="51.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="20" until="114.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_N:2" color="252,204,10" edges="817381415" >
+        <stop busStop="7633689324" duration="20" until="41.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="20" until="105.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_Q:0" color="252,204,10" edges="817415225" >
+        <stop busStop="7656750825" duration="20" until="47.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="20" until="106.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_1:0" color="238,53,46" edges="808965710#0 808965710#1" >
+        <stop busStop="5106260206" duration="20" until="31.0"/> <!-- 14th Street -->
+        <stop busStop="5106260204" duration="20" until="86.0"/> <!-- 18th Street -->
+    </route>
+    <route id="pt_subway_Q:1" color="252,204,10" edges="817381415" >
+        <stop busStop="7633689324" duration="20" until="71.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="20" until="135.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_HOB–33:0" color="0,130,198" edges="813712317" >
+        <stop busStop="5551785165" duration="20" until="44.0"/> <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="20" until="107.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_3:0" color="238,53,46" edges="808965711#0 808965711#1 808965711#2" >
+        <stop busStop="5106260207" duration="20" until="31.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_JSQ–33:0" color="253,184,39" edges="591434572" >
+        <stop busStop="5404334152" duration="20" until="44.0"/> <!-- 9th Street -->
+        <stop busStop="7509382448" duration="20" until="98.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_5:4" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="66.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_bus_X68:0" edges="22898643 1224492208 788602263#0 1088320654#0 428569356#0 420598373#0 -1088320653#2 -1088320651#2 -1088320650#2 -1088320649#2 -489019753" >
+        <stop busStop="4763900908" duration="20" until="76.0"/> <!-- East 23rd Street & Broadway -->
+    </route>
+    <route id="pt_bus_M15:0" color="0,108,183" edges="157014136#0 871693849#0 420598266#0 420598241#0 420598236#0 378363223#0 420598294#0" >
+        <stop busStop="6139477286" duration="20" until="38.0"/> <!-- 2nd Avenue & East 23rd Street -->
+    </route>
+    <route id="pt_subway_F:2" color="255,99,25" edges="554387911" >
+        <stop busStop="7535669386" duration="20" until="63.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_bus_M14A-SBS:0" edges="-630828594#2 -195743164#2 -420522695#3 -666752576#3 -1080982433#1 -5670924#1 1080982434#0 5672434 1080982435 -1080982436 -196117073 -1080982437" >
+        <stop busStop="-11040029967" duration="20" until="50.0"/> <!-- East 14th Street & 4th Avenue -->
+    </route>
+    <route id="pt_bus_X68:2" edges="1088320648#0 1088320649#0 1088320650#0 420519634 1088320652#0 -420598373#2 -428569356#1 5671393#0 5671393#3 667597422#0" >
+        <stop busStop="5266429279" duration="20" until="97.0"/> <!-- East 23rd Street & Lexington Avenue -->
+    </route>
+    <route id="pt_subway_L:0" color="167,169,172" edges="552261294" >
+        <stop busStop="5332358381" duration="20" until="51.0"/> <!-- 6th Avenue -->
+        <stop busStop="7618745565" duration="20" until="110.0"/> <!-- Union Square -->
+    </route>
+    <route id="pt_subway_4:2" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="45.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_M:0" color="255,99,25" edges="554387916" >
+        <stop busStop="5551785167" duration="20" until="44.0"/> <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="20" until="105.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_bus_X68:1" edges="22898643 1224492208 788602263#0 1088320654#0 428569356#0 420598373#0 -1088320653#2 -1088320651#2 -1088320650#2 -1088320649#2 -489019753" >
+        <stop busStop="4763900910" duration="20" until="106.0"/> <!-- East 23rd Street & Broadway -->
+    </route>
+    <route id="pt_subway_2:0" color="238,53,46" edges="803142786 808965713#1" >
+        <stop busStop="7512663145" duration="20" until="47.0"/> <!-- 18th Street -->
+    </route>
+    <route id="pt_bus_M14A-SBS:1" edges="1080982437 196117073 1080982436 -1080982435 -5672434 -1080982434#1 5670924#0 1080982433#0 666752576#0 420522695#0 1080982440#0 630828594#0" >
+        <stop busStop="11040080995" duration="20" until="39.0"/> <!-- West 14th Street & 7th Avenue -->
+    </route>
+    <route id="pt_subway_1:1" color="238,53,46" edges="803142786 808965713#1" >
+        <stop busStop="7512663145" duration="20" until="52.0"/> <!-- 18th Street -->
+    </route>
+    <route id="pt_subway_2:2" color="238,53,46" edges="808965711#0 808965711#1 808965711#2" >
+        <stop busStop="5106260207" duration="20" until="31.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_4:3" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="67.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_bus_M15-SBS:0" color="0,108,183" edges="157014136#0 871693849#0 420598266#0 420598241#0 420598236#0 378363223#0 420598294#0" >
+        <stop busStop="6139477286" duration="20" until="38.0"/> <!-- 2nd Avenue & East 23rd Street -->
+    </route>
+    <route id="pt_subway_2:1" color="238,53,46" edges="808965710#0 808965710#1" >
+        <stop busStop="5106260206" duration="20" until="31.0"/> <!-- 14th Street -->
+        <stop busStop="5106260204" duration="20" until="85.0"/> <!-- 18th Street -->
+    </route>
+    <route id="pt_subway_5:5" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="44.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_HOB–33:1" color="0,130,198" edges="591434572" >
+        <stop busStop="5404334152" duration="20" until="44.0"/> <!-- 9th Street -->
+        <stop busStop="7509382448" duration="20" until="98.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_JSQ–33:1" color="253,184,39" edges="813712317" >
+        <stop busStop="5551785165" duration="20" until="43.0"/> <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="20" until="107.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_5:7" color="0,147,60" edges="817018813" >
+        <stop busStop="4983147337" duration="20" until="34.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_5:6" color="0,147,60" edges="817013583" >
+        <stop busStop="4983147359" duration="20" until="62.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_N:3" color="252,204,10" edges="813742876" >
+        <stop busStop="7656750824" duration="20" until="51.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_6:1" color="0,147,60" edges="813742875" >
+        <stop busStop="4983147377" duration="20" until="46.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="20" until="113.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_W:0" color="252,204,10" edges="817381415" >
+        <stop busStop="7633689324" duration="20" until="47.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="20" until="111.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_M:1" color="255,99,25" edges="554387911" >
+        <stop busStop="7535669386" duration="20" until="64.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_W:1" color="252,204,10" edges="817415225" >
+        <stop busStop="7656750825" duration="20" until="50.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="20" until="112.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_6:0" color="0,147,60" edges="817013581" >
+        <stop busStop="7630588806" duration="20" until="45.0"/> <!-- 28th Street -->
+        <stop busStop="7630588808" duration="20" until="98.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="20" until="163.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_Q:2" color="252,204,10" edges="817381426" >
+        <stop busStop="7656750823" duration="20" until="70.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_R:1" color="252,204,10" edges="817415225" >
+        <stop busStop="7656750825" duration="20" until="47.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="20" until="107.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_Q:3" color="252,204,10" edges="813742876" >
+        <stop busStop="7656750824" duration="20" until="52.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_R:0" color="252,204,10" edges="817381415" >
+        <stop busStop="7633689324" duration="20" until="65.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="20" until="131.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_N:4" color="252,204,10" edges="817381426" >
+        <stop busStop="7656750823" duration="20" until="67.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_N:5" color="252,204,10" edges="817415225" >
+        <stop busStop="7656750825" duration="20" until="52.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="20" until="113.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_L:1" color="167,169,172" edges="808580928" >
+        <stop busStop="7618745568" duration="20" until="52.0"/> <!-- Union Square -->
+        <stop busStop="5336193667" duration="20" until="112.0"/> <!-- 6th Avenue -->
+    </route>
+    <route id="pt_subway_6:3" color="0,147,60" edges="813742875" >
+        <stop busStop="4983147377" duration="20" until="44.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="20" until="111.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_6:2" color="0,147,60" edges="817013581" >
+        <stop busStop="7630588806" duration="20" until="44.0"/> <!-- 28th Street -->
+        <stop busStop="7630588808" duration="20" until="96.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="20" until="160.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <route id="pt_subway_F:3" color="255,99,25" edges="554387916" >
+        <stop busStop="5551785167" duration="20" until="43.0"/> <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="20" until="102.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_4:5" color="0,147,60" edges="813742875" >
+        <stop busStop="4983147377" duration="20" until="47.0"/> <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="20" until="114.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_4:4" color="0,147,60" edges="817013581" >
+        <stop busStop="7630588806" duration="20" until="44.0"/> <!-- 28th Street -->
+        <stop busStop="7630588808" duration="20" until="94.0"/> <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="20" until="156.0"/> <!-- 14th Street–Union Square -->
+    </route>
+    <flow id="pt_subway_5:0" type="pt_subway" route="pt_subway_5:0" begin="27.0" end="3627.0" period="600" line="5:0" >
+        <param key="name" value="NYCS - 5 Train (evenings, weekends): Eastchester–Dyre Avenue → Bowling Green"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_F:1" type="pt_subway" route="pt_subway_F:1" begin="17.0" end="3617.0" period="600" line="F:1" >
+        <param key="name" value="NYCS - &lt;F&gt; Train (am rush): Coney Island–Stillwell Avenue → Jamaica–179th Street"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_5:1" type="pt_subway" route="pt_subway_5:1" begin="47.0" end="3647.0" period="600" line="5:1" >
+        <param key="name" value="NYCS - 5 Train (evenings, weekends): Bowling Green → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33_via_HOB:0" type="pt_subway" route="pt_subway_JSQ–33_via_HOB:0" begin="3.0" end="3603.0" period="600" line="JSQ–33_via_HOB:0" >
+        <param key="name" value="PATH: 33rd Street → Hoboken → Journal Square"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_5:2" type="pt_subway" route="pt_subway_5:2" begin="59.0" end="3659.0" period="300" line="5:2" >
+        <param key="name" value="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_5:3" type="pt_subway" route="pt_subway_5:3" begin="55.0" end="3655.0" period="300" line="5:3" >
+        <param key="name" value="NYCS - 5 Train (am rush): Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_F:0" type="pt_subway" route="pt_subway_F:0" begin="15.0" end="3615.0" period="600" line="F:0" >
+        <param key="name" value="NYCS - &lt;F&gt; Train (pm rush): Jamaica–179th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33_via_HOB:1" type="pt_subway" route="pt_subway_JSQ–33_via_HOB:1" begin="15.0" end="3615.0" period="600" line="JSQ–33_via_HOB:1" >
+        <param key="name" value="PATH: Journal Square → Hoboken → 33rd Street"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_4:0" type="pt_subway" route="pt_subway_4:0" begin="65.0" end="3665.0" period="180" line="4:0" >
+        <param key="name" value="NYCS - 4 Train (am rush): Woodlawn → Crown Heights–Utica Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_4:1" type="pt_subway" route="pt_subway_4:1" begin="104.0" end="3704.0" period="240" line="4:1" >
+        <param key="name" value="NYCS - 4 Train (pm rush): Crown Heights–Utica Avenue → Woodlawn"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_N:0" type="pt_subway" route="pt_subway_N:0" begin="93.0" end="3693.0" period="600" line="N:0" >
+        <param key="name" value="NYCS - N Train (weekends): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_N:1" type="pt_subway" route="pt_subway_N:1" begin="98.0" end="3698.0" period="600" line="N:1" >
+        <param key="name" value="NYCS - N Train (weekends): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_N:2" type="pt_subway" route="pt_subway_N:2" begin="103.0" end="3703.0" period="1200" line="N:2" >
+        <param key="name" value="NYCS - N Train (late nights): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_Q:0" type="pt_subway" route="pt_subway_Q:0" begin="119.0" end="3719.0" period="1200" line="Q:0" >
+        <param key="name" value="NYCS - Q Train (late nights): Coney Island–Stillwell Avenue → 96th Street"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:0" type="pt_subway" route="pt_subway_1:0" begin="173.0" end="3773.0" period="240" line="1:0" >
+        <param key="name" value="NYCS - 1 Train: South Ferry → Van Cortlandt Park–242nd Street"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_Q:1" type="pt_subway" route="pt_subway_Q:1" begin="125.0" end="3725.0" period="1200" line="Q:1" >
+        <param key="name" value="NYCS - Q Train (late nights): 96th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_HOB–33:0" type="pt_subway" route="pt_subway_HOB–33:0" begin="139.0" end="3739.0" period="600" line="HOB–33:0" >
+        <param key="name" value="PATH: 33rd Street → Hoboken"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_3:0" type="pt_subway" route="pt_subway_3:0" begin="227.0" end="3827.0" period="420" line="3:0" >
+        <param key="name" value="NYCS - 3 Train: New Lots Avenue → Harlem–148th Street"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33:0" type="pt_subway" route="pt_subway_JSQ–33:0" begin="160.0" end="3760.0" period="600" line="JSQ–33:0" >
+        <param key="name" value="PATH: Journal Square → 33rd Street"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_5:4" type="pt_subway" route="pt_subway_5:4" begin="222.0" end="3822.0" period="300" line="5:4" >
+        <param key="name" value="NYCS - 5 Train (am rush): Nereid Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_X68:0" type="pt_bus" route="pt_bus_X68:0" begin="132.0" end="3732.0" period="600" line="X68:0" >
+        <param key="name" value="NYCB - X68"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_M15:0" type="pt_bus" route="pt_bus_M15:0" begin="166.0" end="3766.0" period="600" line="M15:0" >
+        <param key="name" value="Bus M15: East Harlem → South Ferry"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_subway_F:2" type="pt_subway" route="pt_subway_F:2" begin="218.0" end="3818.0" period="420" line="F:2" >
+        <param key="name" value="NYCS - F Train: Coney Island–Stillwell Avenue → Jamaica–179th Street"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_M14A-SBS:0" type="pt_bus" route="pt_bus_M14A-SBS:0" begin="131.0" end="3731.0" period="600" line="M14A-SBS:0" >
+        <param key="name" value="NYCB - M14A-SBS Lower East Side --&gt; Abingdon Square"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_X68:2" type="pt_bus" route="pt_bus_X68:2" begin="136.0" end="3736.0" period="600" line="X68:2" >
+        <param key="name" value="NYCB - X68"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_subway_L:0" type="pt_subway" route="pt_subway_L:0" begin="201.0" end="3801.0" period="300" line="L:0" >
+        <param key="name" value="NYCS - L Train: 8th Avenue → Canarsie–Rockaway Parkway"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_4:2" type="pt_subway" route="pt_subway_4:2" begin="253.0" end="3853.0" period="240" line="4:2" >
+        <param key="name" value="NYCS - 4 Train: Crown Heights–Utica Avenue → Woodlawn"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_M:0" type="pt_subway" route="pt_subway_M:0" begin="204.0" end="3804.0" period="600" line="M:0" >
+        <param key="name" value="NYCS - M Train: Forest Hills–71st Avenue → Middle Village–Metropolitan Avenue"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_X68:1" type="pt_bus" route="pt_bus_X68:1" begin="138.0" end="3738.0" period="600" line="X68:1" >
+        <param key="name" value="NYCB - X68"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_subway_2:0" type="pt_subway" route="pt_subway_2:0" begin="303.0" end="3903.0" period="1200" line="2:0" >
+        <param key="name" value="NYCS - 2 Train (late nights): Wakefield–241st Street → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_M14A-SBS:1" type="pt_bus" route="pt_bus_M14A-SBS:1" begin="165.0" end="3765.0" period="600" line="M14A-SBS:1" >
+        <param key="name" value="NYCB - M14A-SBS Abingdon Square --&gt; Lower East Side"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:1" type="pt_subway" route="pt_subway_1:1" begin="346.0" end="3946.0" period="240" line="1:1" >
+        <param key="name" value="NYCS - 1 Train: Van Cortlandt Park–242nd Street → South Ferry"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_2:2" type="pt_subway" route="pt_subway_2:2" begin="362.0" end="3962.0" period="420" line="2:2" >
+        <param key="name" value="NYCS - 2 Train: Flatbush Avenue–Brooklyn College → Wakefield–241st Street"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_subway_4:3" type="pt_subway" route="pt_subway_4:3" begin="365.0" end="3965.0" period="240" line="4:3" >
+        <param key="name" value="NYCS - 4 Train: Woodlawn → Crown Heights–Utica Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M15-SBS:0" type="pt_bus" route="pt_bus_M15-SBS:0" begin="331.0" end="3931.0" period="600" line="M15-SBS:0" >
+        <param key="name" value="Bus M15-SBS: East Harlem → South Ferry"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_2:1" type="pt_subway" route="pt_subway_2:1" begin="353.0" end="3953.0" period="1200" line="2:1" >
+        <param key="name" value="NYCS - 2 Train (late nights): Flatbush Avenue–Brooklyn College → Wakefield–241st Street"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_5:5" type="pt_subway" route="pt_subway_5:5" begin="371.0" end="3971.0" period="480" line="5:5" >
+        <param key="name" value="NYCS - 5 Train: Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_HOB–33:1" type="pt_subway" route="pt_subway_HOB–33:1" begin="321.0" end="3921.0" period="600" line="HOB–33:1" >
+        <param key="name" value="PATH: Hoboken → 33rd Street"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33:1" type="pt_subway" route="pt_subway_JSQ–33:1" begin="326.0" end="3926.0" period="600" line="JSQ–33:1" >
+        <param key="name" value="PATH: 33rd Street → Journal Square"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_5:7" type="pt_subway" route="pt_subway_5:7" begin="383.0" end="3983.0" period="300" line="5:7" >
+        <param key="name" value="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Nereid Avenue"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_5:6" type="pt_subway" route="pt_subway_5:6" begin="381.0" end="3981.0" period="480" line="5:6" >
+        <param key="name" value="NYCS - 5 Train: Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_N:3" type="pt_subway" route="pt_subway_N:3" begin="418.0" end="4018.0" period="420" line="N:3" >
+        <param key="name" value="NYCS - N Train: Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_6:1" type="pt_subway" route="pt_subway_6:1" begin="389.0" end="3989.0" period="240" line="6:1" >
+        <param key="name" value="NYCS - 6 Train: Brooklyn Bridge–City Hall → Pelham Bay Park"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_W:0" type="pt_subway" route="pt_subway_W:0" begin="406.0" end="4006.0" period="600" line="W:0" >
+        <param key="name" value="NYCS - W Train: Astoria–Ditmars Boulevard → Whitehall Street–South Ferry"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_M:1" type="pt_subway" route="pt_subway_M:1" begin="437.0" end="4037.0" period="600" line="M:1" >
+        <param key="name" value="NYCS - M Train: Middle Village–Metropolitan Avenue → Forest Hills–71st Avenue"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_W:1" type="pt_subway" route="pt_subway_W:1" begin="422.0" end="4022.0" period="600" line="W:1" >
+        <param key="name" value="NYCS - W Train: Whitehall Street–South Ferry → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_6:0" type="pt_subway" route="pt_subway_6:0" begin="388.0" end="3988.0" period="240" line="6:0" >
+        <param key="name" value="NYCS - 6 Train: Pelham Bay Park → Brooklyn Bridge–City Hall"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_Q:2" type="pt_subway" route="pt_subway_Q:2" begin="483.0" end="4083.0" period="480" line="Q:2" >
+        <param key="name" value="NYCS - Q Train: 96th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_R:1" type="pt_subway" route="pt_subway_R:1" begin="441.0" end="4041.0" period="600" line="R:1" >
+        <param key="name" value="NYCS - R Train: Bay Ridge–95th Street → Forest Hills–71st Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_Q:3" type="pt_subway" route="pt_subway_Q:3" begin="484.0" end="4084.0" period="480" line="Q:3" >
+        <param key="name" value="NYCS - Q Train: Coney Island–Stillwell Avenue → 96th Street"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_R:0" type="pt_subway" route="pt_subway_R:0" begin="437.0" end="4037.0" period="600" line="R:0" >
+        <param key="name" value="NYCS - R Train: Forest Hills–71st Avenue → Bay Ridge–95th Street"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_N:4" type="pt_subway" route="pt_subway_N:4" begin="494.0" end="4094.0" period="600" line="N:4" >
+        <param key="name" value="NYCS - N Train: Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_N:5" type="pt_subway" route="pt_subway_N:5" begin="497.0" end="4097.0" period="780" line="N:5" >
+        <param key="name" value="NYCS - N Train (late nights): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_L:1" type="pt_subway" route="pt_subway_L:1" begin="508.0" end="4108.0" period="300" line="L:1" >
+        <param key="name" value="NYCS - L Train: Canarsie–Rockaway Parkway → 8th Avenue"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_6:3" type="pt_subway" route="pt_subway_6:3" begin="535.0" end="4135.0" period="120" line="6:3" >
+        <param key="name" value="NYCS - &lt;6&gt; Train (pm rush): Brooklyn Bridge–City Hall → Pelham Bay Park"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_subway_6:2" type="pt_subway" route="pt_subway_6:2" begin="517.0" end="4117.0" period="120" line="6:2" >
+        <param key="name" value="NYCS - &lt;6&gt; Train (am rush): Pelham Bay Park → Brooklyn Bridge–City Hall"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_subway_F:3" type="pt_subway" route="pt_subway_F:3" begin="561.0" end="4161.0" period="420" line="F:3" >
+        <param key="name" value="NYCS - F Train: Jamaica–179th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_4:5" type="pt_subway" route="pt_subway_4:5" begin="583.0" end="4183.0" period="1200" line="4:5" >
+        <param key="name" value="NYCS - 4 Train (late nights): New Lots Avenue → Woodlawn"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_4:4" type="pt_subway" route="pt_subway_4:4" begin="574.0" end="4174.0" period="1200" line="4:4" >
+        <param key="name" value="NYCS - 4 Train (late nights): Woodlawn → New Lots Avenue"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+</routes>

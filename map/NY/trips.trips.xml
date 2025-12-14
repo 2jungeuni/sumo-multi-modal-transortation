@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-13 23:52:49.613333 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ UNKNOWN
+<configuration>
+    <net-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm.net.xml.gz"/>
+    <ptlines-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_ptlines.xml"/>
+    <ptstops-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_stops.add.xml"/>
+    <output-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/osm_pt.rou.xml"/>
+    <stopinfos-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/stopinfos.xml"/>
+    <routes-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/vehroutes.xml"/>
+    <trips-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-52-34/trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_subway_JSQ–33_via_HOB:0" type="pt_subway" depart="3.0" departLane="best" from="813712317" to="813712317">
+        <stop busStop="5551785165" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="1_subway_JSQ–33_via_HOB:1" type="pt_subway" depart="15.0" departLane="best" from="591434572" to="591434572">
+        <stop busStop="5404334152" duration="30"/>  <!-- 9th Street -->
+        <stop busStop="7509382448" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="2_subway_F:0" type="pt_subway" depart="15.0" departLane="best" from="554387916" to="554387916">
+        <stop busStop="5551785167" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="3_subway_F:1" type="pt_subway" depart="17.0" departLane="best" from="554387911" to="554387911">
+        <stop busStop="7535669386" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="4_subway_5:0" type="pt_subway" depart="27.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="5_subway_5:1" type="pt_subway" depart="47.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="6_subway_5:2" type="pt_subway" depart="52.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="7_subway_5:3" type="pt_subway" depart="55.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="8_subway_4:0" type="pt_subway" depart="58.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="9_subway_4:1" type="pt_subway" depart="60.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="10_subway_N:0" type="pt_subway" depart="93.0" departLane="best" from="817381415" to="817381415">
+        <stop busStop="7633689324" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="11_subway_N:1" type="pt_subway" depart="98.0" departLane="best" from="817415225" to="817415225">
+        <stop busStop="7656750825" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="12_subway_N:2" type="pt_subway" depart="102.0" departLane="best" from="817381415" to="817381415">
+        <stop busStop="7633689324" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="13_subway_Q:0" type="pt_subway" depart="119.0" departLane="best" from="817415225" to="817415225">
+        <stop busStop="7656750825" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="14_subway_Q:1" type="pt_subway" depart="125.0" departLane="best" from="817381415" to="817381415">
+        <stop busStop="7633689324" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="15_bus_M14A-SBS:0" type="pt_bus" depart="131.0" departLane="best" from="-630828594#2" to="-1080982437">
+        <stop busStop="-11040029967" duration="30"/>  <!-- East 14th Street & 4th Avenue -->
+    </trip>
+    <trip id="16_bus_X68:0" type="pt_bus" depart="132.0" departLane="best" from="22898643" to="-489019753">
+        <stop busStop="4763900908" duration="30"/>  <!-- East 23rd Street & Broadway -->
+    </trip>
+    <trip id="17_bus_X68:1" type="pt_bus" depart="133.0" departLane="best" from="22898643" to="-489019753">
+        <stop busStop="4763900910" duration="30"/>  <!-- East 23rd Street & Broadway -->
+    </trip>
+    <trip id="18_bus_X68:2" type="pt_bus" depart="136.0" departLane="best" from="1088320648#0" to="667597422#0">
+        <stop busStop="5266429279" duration="30"/>  <!-- East 23rd Street & Lexington Avenue -->
+    </trip>
+    <trip id="19_subway_HOB–33:0" type="pt_subway" depart="139.0" departLane="best" from="813712317" to="813712317">
+        <stop busStop="5551785165" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="20_subway_JSQ–33:0" type="pt_subway" depart="160.0" departLane="best" from="591434572" to="591434572">
+        <stop busStop="5404334152" duration="30"/>  <!-- 9th Street -->
+        <stop busStop="7509382448" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="21_bus_M14A-SBS:1" type="pt_bus" depart="165.0" departLane="best" from="1080982437" to="630828594#0">
+        <stop busStop="11040080995" duration="30"/>  <!-- West 14th Street & 7th Avenue -->
+    </trip>
+    <trip id="22_bus_M15:0" type="pt_bus" depart="166.0" departLane="best" from="157014136#0" to="420598294#0">
+        <stop busStop="6139477286" duration="30"/>  <!-- 2nd Avenue & East 23rd Street -->
+    </trip>
+    <trip id="23_subway_1:0" type="pt_subway" depart="173.0" departLane="best" from="808965710#0" to="808965710#1">
+        <stop busStop="5106260206" duration="30"/>  <!-- 14th Street -->
+        <stop busStop="5106260204" duration="30"/>  <!-- 18th Street -->
+    </trip>
+    <trip id="24_subway_L:0" type="pt_subway" depart="201.0" departLane="best" from="552261294" to="552261294">
+        <stop busStop="5332358381" duration="30"/>  <!-- 6th Avenue -->
+        <stop busStop="7618745565" duration="30"/>  <!-- Union Square -->
+    </trip>
+    <trip id="25_subway_M:0" type="pt_subway" depart="204.0" departLane="best" from="554387916" to="554387916">
+        <stop busStop="5551785167" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="26_subway_F:2" type="pt_subway" depart="218.0" departLane="best" from="554387911" to="554387911">
+        <stop busStop="7535669386" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="27_subway_5:4" type="pt_subway" depart="222.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="28_subway_3:0" type="pt_subway" depart="227.0" departLane="best" from="808965711#0" to="808965711#2">
+        <stop busStop="5106260207" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="29_subway_4:2" type="pt_subway" depart="253.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="30_subway_2:0" type="pt_subway" depart="303.0" departLane="best" from="803142786" to="808965713#1">
+        <stop busStop="7512663145" duration="30"/>  <!-- 18th Street -->
+    </trip>
+    <trip id="31_subway_HOB–33:1" type="pt_subway" depart="321.0" departLane="best" from="591434572" to="591434572">
+        <stop busStop="5404334152" duration="30"/>  <!-- 9th Street -->
+        <stop busStop="7509382448" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="32_subway_JSQ–33:1" type="pt_subway" depart="326.0" departLane="best" from="813712317" to="813712317">
+        <stop busStop="5551785165" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="7509382447" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="33_bus_M15-SBS:0" type="pt_bus" depart="331.0" departLane="best" from="157014136#0" to="420598294#0">
+        <stop busStop="6139477286" duration="30"/>  <!-- 2nd Avenue & East 23rd Street -->
+    </trip>
+    <trip id="34_subway_1:1" type="pt_subway" depart="346.0" departLane="best" from="803142786" to="808965713#1">
+        <stop busStop="7512663145" duration="30"/>  <!-- 18th Street -->
+    </trip>
+    <trip id="35_subway_2:1" type="pt_subway" depart="353.0" departLane="best" from="808965710#0" to="808965710#1">
+        <stop busStop="5106260206" duration="30"/>  <!-- 14th Street -->
+        <stop busStop="5106260204" duration="30"/>  <!-- 18th Street -->
+    </trip>
+    <trip id="36_subway_2:2" type="pt_subway" depart="362.0" departLane="best" from="808965711#0" to="808965711#2">
+        <stop busStop="5106260207" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="37_subway_4:3" type="pt_subway" depart="365.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="38_subway_5:5" type="pt_subway" depart="371.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="39_subway_5:6" type="pt_subway" depart="381.0" departLane="best" from="817013583" to="817013583">
+        <stop busStop="4983147359" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="40_subway_5:7" type="pt_subway" depart="383.0" departLane="best" from="817018813" to="817018813">
+        <stop busStop="4983147337" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="41_subway_6:0" type="pt_subway" depart="388.0" departLane="best" from="817013581" to="817013581">
+        <stop busStop="7630588806" duration="30"/>  <!-- 28th Street -->
+        <stop busStop="7630588808" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="42_subway_6:1" type="pt_subway" depart="389.0" departLane="best" from="813742875" to="813742875">
+        <stop busStop="4983147377" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="43_subway_W:0" type="pt_subway" depart="406.0" departLane="best" from="817381415" to="817381415">
+        <stop busStop="7633689324" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="44_subway_N:3" type="pt_subway" depart="418.0" departLane="best" from="813742876" to="813742876">
+        <stop busStop="7656750824" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="45_subway_W:1" type="pt_subway" depart="422.0" departLane="best" from="817415225" to="817415225">
+        <stop busStop="7656750825" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="46_subway_M:1" type="pt_subway" depart="437.0" departLane="best" from="554387911" to="554387911">
+        <stop busStop="7535669386" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="47_subway_R:0" type="pt_subway" depart="437.0" departLane="best" from="817381415" to="817381415">
+        <stop busStop="7633689324" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147855" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="48_subway_R:1" type="pt_subway" depart="441.0" departLane="best" from="817415225" to="817415225">
+        <stop busStop="7656750825" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="49_subway_Q:2" type="pt_subway" depart="483.0" departLane="best" from="817381426" to="817381426">
+        <stop busStop="7656750823" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="50_subway_Q:3" type="pt_subway" depart="484.0" departLane="best" from="813742876" to="813742876">
+        <stop busStop="7656750824" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="51_subway_N:4" type="pt_subway" depart="485.0" departLane="best" from="817381426" to="817381426">
+        <stop busStop="7656750823" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="52_subway_N:5" type="pt_subway" depart="497.0" departLane="best" from="817415225" to="817415225">
+        <stop busStop="7656750825" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7633705521" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="53_subway_L:1" type="pt_subway" depart="508.0" departLane="best" from="808580928" to="808580928">
+        <stop busStop="7618745568" duration="30"/>  <!-- Union Square -->
+        <stop busStop="5336193667" duration="30"/>  <!-- 6th Avenue -->
+    </trip>
+    <trip id="54_subway_6:2" type="pt_subway" depart="517.0" departLane="best" from="817013581" to="817013581">
+        <stop busStop="7630588806" duration="30"/>  <!-- 28th Street -->
+        <stop busStop="7630588808" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="55_subway_6:3" type="pt_subway" depart="535.0" departLane="best" from="813742875" to="813742875">
+        <stop busStop="4983147377" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+    <trip id="56_subway_F:3" type="pt_subway" depart="561.0" departLane="best" from="554387916" to="554387916">
+        <stop busStop="5551785167" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="6943277291" duration="30"/>  <!-- 14th Street -->
+    </trip>
+    <trip id="57_subway_4:4" type="pt_subway" depart="574.0" departLane="best" from="817013581" to="817013581">
+        <stop busStop="7630588806" duration="30"/>  <!-- 28th Street -->
+        <stop busStop="7630588808" duration="30"/>  <!-- 23rd Street -->
+        <stop busStop="4983147403" duration="30"/>  <!-- 14th Street–Union Square -->
+    </trip>
+    <trip id="58_subway_4:5" type="pt_subway" depart="583.0" departLane="best" from="813742875" to="813742875">
+        <stop busStop="4983147377" duration="30"/>  <!-- 14th Street–Union Square -->
+        <stop busStop="7142969941" duration="30"/>  <!-- 23rd Street -->
+    </trip>
+</routes>

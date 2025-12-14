@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-13 23:52:48 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/../data/typemap/osmNetconvert.typ.xml,/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/../data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.by-vclass value="passenger,bus,tram,rail_urban,subway,cable_car,rail"/>
+    </edge_removal>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="11100811" name="PATH: 33rd Street → Hoboken → Journal Square" line="JSQ–33 via HOB" type="subway" vClass="subway" completeness="0.22" missingBefore="1" missingAfter="6">
+        <route edges="813712317"/>
+        <busStop id="5551785165" name="23rd Street"/>
+        <busStop id="7509382447" name="14th Street"/>
+    </ptLine>
+    <ptLine id="11100812" name="PATH: Journal Square → Hoboken → 33rd Street" line="JSQ–33 via HOB" type="subway" vClass="subway" completeness="0.22" missingBefore="5" missingAfter="2">
+        <route edges="591434572"/>
+        <busStop id="5404334152" name="9th Street"/>
+        <busStop id="7509382448" name="14th Street"/>
+    </ptLine>
+    <ptLine id="11248272" name="NYCS - &lt;F&gt; Train (pm rush): Jamaica–179th Street → Coney Island–Stillwell Avenue" line="&lt;F&gt;" type="subway" vClass="subway" color="255,99,25" completeness="0.05" missingBefore="15" missingAfter="20">
+        <route edges="554387916"/>
+        <busStop id="5551785167" name="23rd Street"/>
+        <busStop id="6943277291" name="14th Street"/>
+    </ptLine>
+    <ptLine id="11248273" name="NYCS - &lt;F&gt; Train (am rush): Coney Island–Stillwell Avenue → Jamaica–179th Street" line="&lt;F&gt;" type="subway" vClass="subway" color="255,99,25" completeness="0.03" missingBefore="20" missingAfter="16">
+        <route edges="554387911"/>
+        <busStop id="7535669386" name="14th Street"/>
+    </ptLine>
+    <ptLine id="11255826" name="NYCS - 5 Train (evenings, weekends): Eastchester–Dyre Avenue → Bowling Green" line="5" type="subway" vClass="subway" period="600" color="0,147,60" completeness="0.04" missingBefore="20" missingAfter="4">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11255827" name="NYCS - 5 Train (evenings, weekends): Bowling Green → Eastchester–Dyre Avenue" line="5" type="subway" vClass="subway" period="600" color="0,147,60" completeness="0.04" missingBefore="4" missingAfter="20">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11255830" name="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue" line="5" type="subway" vClass="subway" period="300" color="0,147,60" completeness="0.03" missingBefore="15" missingAfter="13">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11255831" name="NYCS - 5 Train (am rush): Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College" line="5" type="subway" vClass="subway" period="300" color="0,147,60" completeness="0.03" missingBefore="13" missingAfter="15">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11255832" name="NYCS - 4 Train (am rush): Woodlawn → Crown Heights–Utica Avenue" line="4" type="subway" vClass="subway" period="180" color="0,147,60" completeness="0.04" missingBefore="17" missingAfter="9">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11255833" name="NYCS - 4 Train (pm rush): Crown Heights–Utica Avenue → Woodlawn" line="4" type="subway" vClass="subway" period="240" color="0,147,60" completeness="0.04" missingBefore="9" missingAfter="17">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11256100" name="NYCS - N Train (weekends): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue" line="N" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.06" missingBefore="14" missingAfter="16">
+        <route edges="817381415"/>
+        <busStop id="7633689324" name="23rd Street"/>
+        <busStop id="4983147855" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11256101" name="NYCS - N Train (weekends): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard" line="N" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.06" missingBefore="16" missingAfter="14">
+        <route edges="817415225"/>
+        <busStop id="7656750825" name="14th Street–Union Square"/>
+        <busStop id="7633705521" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="11256102" name="NYCS - N Train (late nights): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue" line="N" type="subway" vClass="subway" period="1200" color="252,204,10" completeness="0.04" missingBefore="14" missingAfter="29">
+        <route edges="817381415"/>
+        <busStop id="7633689324" name="23rd Street"/>
+        <busStop id="4983147855" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="11256103" name="NYCS - Q Train (late nights): Coney Island–Stillwell Avenue → 96th Street" line="Q" type="subway" vClass="subway" period="1200" color="252,204,10" completeness="0.06" missingBefore="22" missingAfter="8">
+        <route edges="817415225"/>
+        <busStop id="7656750825" name="14th Street–Union Square"/>
+        <busStop id="7633705521" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="11256104" name="NYCS - Q Train (late nights): 96th Street → Coney Island–Stillwell Avenue" line="Q" type="subway" vClass="subway" period="1200" color="252,204,10" completeness="0.06" missingBefore="8" missingAfter="22">
+        <route edges="817381415"/>
+        <busStop id="7633689324" name="23rd Street"/>
+        <busStop id="4983147855" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="12382566" name="NYCB - M14A-SBS Lower East Side --&gt; Abingdon Square" line="M14A-SBS" type="bus" vClass="bus" completeness="0.03" missingBefore="26" missingAfter="13">
+        <route edges="-630828594#2 -195743164#2 -420522695#3 -666752576#3 -1080982433#1 -5670924#1 1080982434#0 5672434 1080982435 -1080982436 -196117073 -1080982437"/>
+        <busStop id="-11040029967" name="East 14th Street &amp; 4th Avenue"/>
+    </ptLine>
+    <ptLine id="14479887" name="NYCB - X68" line="X68" type="bus" vClass="bus" completeness="0.02" missingBefore="56" missingAfter="3">
+        <route edges="22898643 1224492208 788602263#0 1088320654#0 428569356#0 420598373#0 -1088320653#2 -1088320651#2 -1088320650#2 -1088320649#2 -489019753"/>
+        <busStop id="4763900908" name="East 23rd Street &amp; Broadway"/>
+    </ptLine>
+    <ptLine id="14479888" name="NYCB - X68" line="X68" type="bus" vClass="bus" completeness="0.02" missingBefore="40" missingAfter="3">
+        <route edges="22898643 1224492208 788602263#0 1088320654#0 428569356#0 420598373#0 -1088320653#2 -1088320651#2 -1088320650#2 -1088320649#2 -489019753"/>
+        <busStop id="4763900910" name="East 23rd Street &amp; Broadway"/>
+    </ptLine>
+    <ptLine id="14479889" name="NYCB - X68" line="X68" type="bus" vClass="bus" completeness="0.02" missingAfter="45">
+        <route edges="1088320648#0 1088320649#0 1088320650#0 420519634 1088320652#0 -420598373#2 -428569356#1 5671393#0 5671393#3 667597422#0"/>
+        <busStop id="5266429279" name="East 23rd Street &amp; Lexington Avenue"/>
+    </ptLine>
+    <ptLine id="1468831" name="PATH: 33rd Street → Hoboken" line="HOB–33" type="subway" vClass="subway" period="600" color="0,130,198" completeness="0.33" missingBefore="1" missingAfter="3">
+        <route edges="813712317"/>
+        <busStop id="5551785165" name="23rd Street"/>
+        <busStop id="7509382447" name="14th Street"/>
+    </ptLine>
+    <ptLine id="1468832" name="PATH: Journal Square → 33rd Street" line="JSQ–33" type="subway" vClass="subway" period="600" color="253,184,39" completeness="0.25" missingBefore="4" missingAfter="2">
+        <route edges="591434572"/>
+        <busStop id="5404334152" name="9th Street"/>
+        <busStop id="7509382448" name="14th Street"/>
+    </ptLine>
+    <ptLine id="2624103" name="NYCB - M14A-SBS Abingdon Square --&gt; Lower East Side" line="M14A-SBS" type="bus" vClass="bus" completeness="0.03" missingBefore="2" missingAfter="33">
+        <route edges="1080982437 196117073 1080982436 -1080982435 -5672434 -1080982434#1 5670924#0 1080982433#0 666752576#0 420522695#0 1080982440#0 630828594#0"/>
+        <busStop id="11040080995" name="West 14th Street &amp; 7th Avenue"/>
+    </ptLine>
+    <ptLine id="2632934" name="Bus M15: East Harlem → South Ferry" line="M15" type="bus" vClass="bus" color="0,108,183" completeness="0.01" missingBefore="74" missingAfter="11">
+        <route edges="157014136#0 871693849#0 420598266#0 420598241#0 420598236#0 378363223#0 420598294#0"/>
+        <busStop id="6139477286" name="2nd Avenue &amp; East 23rd Street"/>
+    </ptLine>
+    <ptLine id="364630" name="NYCS - 1 Train: South Ferry → Van Cortlandt Park–242nd Street" line="1" type="subway" vClass="subway" period="240" color="238,53,46" completeness="0.05" missingBefore="8" missingAfter="28">
+        <route edges="808965710#0 808965710#1"/>
+        <busStop id="5106260206" name="14th Street"/>
+        <busStop id="5106260204" name="18th Street"/>
+    </ptLine>
+    <ptLine id="366763" name="NYCS - L Train: 8th Avenue → Canarsie–Rockaway Parkway" line="L" type="subway" vClass="subway" period="300" color="167,169,172" completeness="0.08" missingBefore="1" missingAfter="21">
+        <route edges="552261294"/>
+        <busStop id="5332358381" name="6th Avenue"/>
+        <busStop id="7618745565" name="Union Square"/>
+    </ptLine>
+    <ptLine id="366767" name="NYCS - M Train: Forest Hills–71st Avenue → Middle Village–Metropolitan Avenue" line="M" type="subway" vClass="subway" period="600" color="255,99,25" completeness="0.06" missingBefore="19" missingAfter="15">
+        <route edges="554387916"/>
+        <busStop id="5551785167" name="23rd Street"/>
+        <busStop id="6943277291" name="14th Street"/>
+    </ptLine>
+    <ptLine id="366772" name="NYCS - F Train: Coney Island–Stillwell Avenue → Jamaica–179th Street" line="F" type="subway" vClass="subway" period="420" color="255,99,25" completeness="0.02" missingBefore="26" missingAfter="16">
+        <route edges="554387911"/>
+        <busStop id="7535669386" name="14th Street"/>
+    </ptLine>
+    <ptLine id="366778" name="NYCS - 5 Train (am rush): Nereid Avenue → Flatbush Avenue–Brooklyn College" line="5" type="subway" vClass="subway" period="300" color="0,147,60" completeness="0.03" missingBefore="17" missingAfter="15">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="366784" name="NYCS - 3 Train: New Lots Avenue → Harlem–148th Street" line="3" type="subway" vClass="subway" period="420" color="238,53,46" completeness="0.03" missingBefore="23" missingAfter="8">
+        <route edges="808965711#0 808965711#1 808965711#2"/>
+        <busStop id="5106260207" name="14th Street"/>
+    </ptLine>
+    <ptLine id="366785" name="NYCS - 4 Train: Crown Heights–Utica Avenue → Woodlawn" line="4" type="subway" vClass="subway" period="240" color="0,147,60" completeness="0.04" missingBefore="9" missingAfter="18">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="7575713" name="NYCS - 2 Train (late nights): Wakefield–241st Street → Flatbush Avenue–Brooklyn College" line="2" type="subway" vClass="subway" period="1200" color="238,53,46" completeness="0.02" missingBefore="34" missingAfter="25">
+        <route edges="803142786 808965713#1"/>
+        <busStop id="7512663145" name="18th Street"/>
+    </ptLine>
+    <ptLine id="7943884" name="PATH: Hoboken → 33rd Street" line="HOB–33" type="subway" vClass="subway" period="600" color="0,130,198" completeness="0.33" missingBefore="2" missingAfter="2">
+        <route edges="591434572"/>
+        <busStop id="5404334152" name="9th Street"/>
+        <busStop id="7509382448" name="14th Street"/>
+    </ptLine>
+    <ptLine id="7943925" name="PATH: 33rd Street → Journal Square" line="JSQ–33" type="subway" vClass="subway" period="600" color="253,184,39" completeness="0.25" missingBefore="1" missingAfter="5">
+        <route edges="813712317"/>
+        <busStop id="5551785165" name="23rd Street"/>
+        <busStop id="7509382447" name="14th Street"/>
+    </ptLine>
+    <ptLine id="9152579" name="Bus M15-SBS: East Harlem → South Ferry" line="M15-SBS" type="bus" vClass="bus" color="0,108,183" completeness="0.03" missingBefore="24" missingAfter="12">
+        <route edges="157014136#0 871693849#0 420598266#0 420598241#0 420598236#0 378363223#0 420598294#0"/>
+        <busStop id="6139477286" name="2nd Avenue &amp; East 23rd Street"/>
+    </ptLine>
+    <ptLine id="9651535" name="NYCS - 1 Train: Van Cortlandt Park–242nd Street → South Ferry" line="1" type="subway" vClass="subway" period="240" color="238,53,46" completeness="0.03" missingBefore="28" missingAfter="9">
+        <route edges="803142786 808965713#1"/>
+        <busStop id="7512663145" name="18th Street"/>
+    </ptLine>
+    <ptLine id="9655662" name="NYCS - 2 Train (late nights): Flatbush Avenue–Brooklyn College → Wakefield–241st Street" line="2" type="subway" vClass="subway" period="1200" color="238,53,46" completeness="0.03" missingBefore="24" missingAfter="34">
+        <route edges="808965710#0 808965710#1"/>
+        <busStop id="5106260206" name="14th Street"/>
+        <busStop id="5106260204" name="18th Street"/>
+    </ptLine>
+    <ptLine id="9655663" name="NYCS - 2 Train: Flatbush Avenue–Brooklyn College → Wakefield–241st Street" line="2" type="subway" vClass="subway" period="420" color="238,53,46" completeness="0.02" missingBefore="20" missingAfter="28">
+        <route edges="808965711#0 808965711#1 808965711#2"/>
+        <busStop id="5106260207" name="14th Street"/>
+    </ptLine>
+    <ptLine id="9677107" name="NYCS - 4 Train: Woodlawn → Crown Heights–Utica Avenue" line="4" type="subway" vClass="subway" period="240" color="0,147,60" completeness="0.04" missingBefore="18" missingAfter="9">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9682648" name="NYCS - 5 Train: Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue" line="5" type="subway" vClass="subway" period="480" color="0,147,60" completeness="0.03" missingBefore="15" missingAfter="20">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9682649" name="NYCS - 5 Train: Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College" line="5" type="subway" vClass="subway" period="480" color="0,147,60" completeness="0.03" missingBefore="20" missingAfter="15">
+        <route edges="817013583"/>
+        <busStop id="4983147359" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9682650" name="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Nereid Avenue" line="5" type="subway" vClass="subway" period="300" color="0,147,60" completeness="0.03" missingBefore="15" missingAfter="17">
+        <route edges="817018813"/>
+        <busStop id="4983147337" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9699135" name="NYCS - 6 Train: Pelham Bay Park → Brooklyn Bridge–City Hall" line="6" type="subway" vClass="subway" period="240" color="0,147,60" completeness="0.08" missingBefore="30" missingAfter="5">
+        <route edges="817013581"/>
+        <busStop id="7630588806" name="28th Street"/>
+        <busStop id="7630588808" name="23rd Street"/>
+        <busStop id="4983147403" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9699136" name="NYCS - 6 Train: Brooklyn Bridge–City Hall → Pelham Bay Park" line="6" type="subway" vClass="subway" period="240" color="0,147,60" completeness="0.05" missingBefore="5" missingAfter="31">
+        <route edges="813742875"/>
+        <busStop id="4983147377" name="14th Street–Union Square"/>
+        <busStop id="7142969941" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="9699150" name="NYCS - W Train: Astoria–Ditmars Boulevard → Whitehall Street–South Ferry" line="W" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.09" missingBefore="14" missingAfter="7">
+        <route edges="817381415"/>
+        <busStop id="7633689324" name="23rd Street"/>
+        <busStop id="4983147855" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9699161" name="NYCS - N Train: Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard" line="N" type="subway" vClass="subway" period="420" color="252,204,10" completeness="0.04" missingBefore="14" missingAfter="13">
+        <route edges="813742876"/>
+        <busStop id="7656750824" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9712256" name="NYCS - W Train: Whitehall Street–South Ferry → Astoria–Ditmars Boulevard" line="W" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.09" missingBefore="7" missingAfter="14">
+        <route edges="817415225"/>
+        <busStop id="7656750825" name="14th Street–Union Square"/>
+        <busStop id="7633705521" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="9712342" name="NYCS - M Train: Middle Village–Metropolitan Avenue → Forest Hills–71st Avenue" line="M" type="subway" vClass="subway" period="600" color="255,99,25" completeness="0.03" missingBefore="15" missingAfter="20">
+        <route edges="554387911"/>
+        <busStop id="7535669386" name="14th Street"/>
+    </ptLine>
+    <ptLine id="9712343" name="NYCS - R Train: Forest Hills–71st Avenue → Bay Ridge–95th Street" line="R" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.04" missingBefore="20" missingAfter="23">
+        <route edges="817381415"/>
+        <busStop id="7633689324" name="23rd Street"/>
+        <busStop id="4983147855" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9712344" name="NYCS - R Train: Bay Ridge–95th Street → Forest Hills–71st Avenue" line="R" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.04" missingBefore="23" missingAfter="20">
+        <route edges="817415225"/>
+        <busStop id="7656750825" name="14th Street–Union Square"/>
+        <busStop id="7633705521" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="9712345" name="NYCS - Q Train: 96th Street → Coney Island–Stillwell Avenue" line="Q" type="subway" vClass="subway" period="480" color="252,204,10" completeness="0.04" missingBefore="6" missingAfter="20">
+        <route edges="817381426"/>
+        <busStop id="7656750823" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9712346" name="NYCS - Q Train: Coney Island–Stillwell Avenue → 96th Street" line="Q" type="subway" vClass="subway" period="480" color="252,204,10" completeness="0.04" missingBefore="20" missingAfter="6">
+        <route edges="813742876"/>
+        <busStop id="7656750824" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9712347" name="NYCS - N Train: Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue" line="N" type="subway" vClass="subway" period="600" color="252,204,10" completeness="0.04" missingBefore="13" missingAfter="14">
+        <route edges="817381426"/>
+        <busStop id="7656750823" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9712348" name="NYCS - N Train (late nights): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard" line="N" type="subway" vClass="subway" period="780" color="252,204,10" completeness="0.04" missingBefore="29" missingAfter="14">
+        <route edges="817415225"/>
+        <busStop id="7656750825" name="14th Street–Union Square"/>
+        <busStop id="7633705521" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="9716996" name="NYCS - L Train: Canarsie–Rockaway Parkway → 8th Avenue" line="L" type="subway" vClass="subway" period="300" color="167,169,172" completeness="0.08" missingBefore="21" missingAfter="1">
+        <busStop id="7618745568" name="Union Square"/>
+        <busStop id="5336193667" name="6th Avenue"/>
+    </ptLine>
+    <ptLine id="9720364" name="NYCS - &lt;6&gt; Train (am rush): Pelham Bay Park → Brooklyn Bridge–City Hall" line="&lt;6&gt;" type="subway" vClass="subway" period="120" color="0,147,60" completeness="0.10" missingBefore="21" missingAfter="5">
+        <route edges="817013581"/>
+        <busStop id="7630588806" name="28th Street"/>
+        <busStop id="7630588808" name="23rd Street"/>
+        <busStop id="4983147403" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9720365" name="NYCS - &lt;6&gt; Train (pm rush): Brooklyn Bridge–City Hall → Pelham Bay Park" line="&lt;6&gt;" type="subway" vClass="subway" period="120" color="0,147,60" completeness="0.07" missingBefore="5" missingAfter="22">
+        <route edges="813742875"/>
+        <busStop id="4983147377" name="14th Street–Union Square"/>
+        <busStop id="7142969941" name="23rd Street"/>
+    </ptLine>
+    <ptLine id="9753683" name="NYCS - F Train: Jamaica–179th Street → Coney Island–Stillwell Avenue" line="F" type="subway" vClass="subway" period="420" color="255,99,25" completeness="0.05" missingBefore="15" missingAfter="26">
+        <route edges="554387916"/>
+        <busStop id="5551785167" name="23rd Street"/>
+        <busStop id="6943277291" name="14th Street"/>
+    </ptLine>
+    <ptLine id="9830179" name="NYCS - 4 Train (late nights): Woodlawn → New Lots Avenue" line="4" type="subway" vClass="subway" period="1200" color="0,147,60" completeness="0.06" missingBefore="26" missingAfter="25">
+        <route edges="817013581"/>
+        <busStop id="7630588806" name="28th Street"/>
+        <busStop id="7630588808" name="23rd Street"/>
+        <busStop id="4983147403" name="14th Street–Union Square"/>
+    </ptLine>
+    <ptLine id="9830180" name="NYCS - 4 Train (late nights): New Lots Avenue → Woodlawn" line="4" type="subway" vClass="subway" period="1200" color="0,147,60" completeness="0.04" missingBefore="25" missingAfter="27">
+        <route edges="813742875"/>
+        <busStop id="4983147377" name="14th Street–Union Square"/>
+        <busStop id="7142969941" name="23rd Street"/>
+    </ptLine>
+</ptLines>

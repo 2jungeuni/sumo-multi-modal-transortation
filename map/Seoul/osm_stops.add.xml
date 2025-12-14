@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-13 23:30:52 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/../data/typemap/osmNetconvert.typ.xml,/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/../data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.by-vclass value="passenger,bus,tram,rail_urban,subway,cable_car,rail"/>
+    </edge_removal>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-1797562528" name="시청" lane="-321173435_0" startPos="13.27" endPos="213.27" friendlyPos="true">
+        <access lane="-1424068313#0_0" pos="7.80" length="3.29" friendlyPos="1"/>
+        <access lane="-1424068313#2_0" pos="176.43" length="31.21" friendlyPos="1"/>
+        <access lane="-176728952#0_0" pos="46.93" length="36.61" friendlyPos="1"/>
+        <access lane="176728952#0_0" pos="0.00" length="34.05" friendlyPos="1"/>
+        <access lane="480233462#3_0" pos="61.50" length="17.69" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-355172962" name="을지로입구" lane="-321173435_0" startPos="809.31" endPos="1009.31" friendlyPos="true">
+        <access lane="-218923156#0_0" pos="25.04" length="27.41" friendlyPos="1"/>
+        <access lane="-219096265_0" pos="0.00" length="25.67" friendlyPos="1"/>
+        <access lane="218923160#4_0" pos="41.44" length="21.00" friendlyPos="1"/>
+        <access lane="218923188#0_0" pos="0.00" length="21.08" friendlyPos="1"/>
+        <access lane="219096265_0" pos="33.59" length="26.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3833429822" name="종각" lane="-637016278#1_0" startPos="68.32" endPos="268.32" friendlyPos="true">
+        <access lane="-233651296#1_0" pos="49.70" length="38.65" friendlyPos="1"/>
+        <access lane="-360113081#2_0" pos="47.66" length="38.51" friendlyPos="1"/>
+        <access lane="184083199#0_0" pos="276.51" length="18.76" friendlyPos="1"/>
+        <access lane="218919060#1_0" pos="15.51" length="14.35" friendlyPos="1"/>
+        <access lane="360113081#0_0" pos="0.00" length="34.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5935738062" name="시청" lane="-628671362_0" startPos="570.56" endPos="770.56" friendlyPos="true">
+        <access lane="-1424068313#2_0" pos="0.00" length="40.69" friendlyPos="1"/>
+        <access lane="1424068313#1_0" pos="176.77" length="38.65" friendlyPos="1"/>
+        <access lane="176728954_0" pos="90.51" length="51.31" friendlyPos="1"/>
+        <access lane="493183992#1_0" pos="24.23" length="15.13" friendlyPos="1"/>
+        <access lane="619147731_0" pos="20.61" length="8.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5935738081" name="을지로입구" lane="-628671362_0" startPos="0.00" endPos="200.00" friendlyPos="true">
+        <access lane="-218923156#0_0" pos="25.04" length="36.22" friendlyPos="1"/>
+        <access lane="-219096265_0" pos="0.00" length="16.77" friendlyPos="1"/>
+        <access lane="218923160#4_0" pos="41.44" length="14.12" friendlyPos="1"/>
+        <access lane="218923188#0_0" pos="0.00" length="28.45" friendlyPos="1"/>
+        <access lane="219096265_0" pos="33.59" length="18.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-660871450" name="종각" lane="-637016283#0_0" startPos="0.00" endPos="200.00" friendlyPos="true">
+        <access lane="1207481551#0_0" pos="0.00" length="57.88" friendlyPos="1"/>
+        <access lane="184083117_0" pos="0.00" length="57.88" friendlyPos="1"/>
+        <access lane="184083199#5_0" pos="17.18" length="82.43" friendlyPos="1"/>
+        <access lane="184083199#7_0" pos="33.78" length="36.36" friendlyPos="1"/>
+        <access lane="474532059#4_0" pos="184.70" length="5.47" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1797562528" name="시청" lane="672454243_0" startPos="796.04" endPos="996.04" friendlyPos="true">
+        <access lane="-1424068313#0_0" pos="7.80" length="3.29" friendlyPos="1"/>
+        <access lane="-1424068313#2_0" pos="176.43" length="31.21" friendlyPos="1"/>
+        <access lane="-176728952#0_0" pos="46.93" length="36.61" friendlyPos="1"/>
+        <access lane="176728952#0_0" pos="0.00" length="34.05" friendlyPos="1"/>
+        <access lane="480233462#3_0" pos="61.50" length="17.69" friendlyPos="1"/>
+    </busStop>
+    <busStop id="355172962" name="을지로입구" lane="672454243_0" startPos="0.00" endPos="200.00" friendlyPos="true">
+        <access lane="-218923156#0_0" pos="25.04" length="27.41" friendlyPos="1"/>
+        <access lane="-219096265_0" pos="0.00" length="25.67" friendlyPos="1"/>
+        <access lane="218923160#4_0" pos="41.44" length="21.00" friendlyPos="1"/>
+        <access lane="218923188#0_0" pos="0.00" length="21.08" friendlyPos="1"/>
+        <access lane="219096265_0" pos="33.59" length="26.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3833429822" name="종각" lane="637016278#1_0" startPos="123.57" endPos="323.57" friendlyPos="true" lines="1">
+        <access lane="-233651296#1_0" pos="49.70" length="38.65" friendlyPos="1"/>
+        <access lane="-360113081#2_0" pos="47.66" length="38.51" friendlyPos="1"/>
+        <access lane="184083199#0_0" pos="276.51" length="18.76" friendlyPos="1"/>
+        <access lane="218919060#1_0" pos="15.51" length="14.35" friendlyPos="1"/>
+        <access lane="360113081#0_0" pos="0.00" length="34.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3833430101" name="시청" lane="637016272#1_0" startPos="152.47" endPos="352.47" friendlyPos="true" lines="1">
+        <access lane="-431903253_0" pos="131.02" length="58.96" friendlyPos="1"/>
+        <access lane="1084408283#0_0" pos="42.74" length="68.06" friendlyPos="1"/>
+        <access lane="1084408283#1_0" pos="29.39" length="19.69" friendlyPos="1"/>
+        <access lane="378453707#0_0" pos="148.11" length="29.33" friendlyPos="1"/>
+        <access lane="431903253_0" pos="0.00" length="63.23" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5935738062" name="시청" lane="628689299_0" startPos="236.56" endPos="436.56" friendlyPos="true">
+        <access lane="-1424068313#2_0" pos="0.00" length="40.69" friendlyPos="1"/>
+        <access lane="1424068313#1_0" pos="176.77" length="38.65" friendlyPos="1"/>
+        <access lane="176728954_0" pos="90.51" length="51.31" friendlyPos="1"/>
+        <access lane="493183992#1_0" pos="24.23" length="15.13" friendlyPos="1"/>
+        <access lane="619147731_0" pos="20.61" length="8.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5935738081" name="을지로입구" lane="628689299_0" startPos="807.12" endPos="1007.12" friendlyPos="true">
+        <access lane="-218923156#0_0" pos="25.04" length="36.22" friendlyPos="1"/>
+        <access lane="-219096265_0" pos="0.00" length="16.77" friendlyPos="1"/>
+        <access lane="218923160#4_0" pos="41.44" length="14.12" friendlyPos="1"/>
+        <access lane="218923188#0_0" pos="0.00" length="28.45" friendlyPos="1"/>
+        <access lane="219096265_0" pos="33.59" length="18.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="660871450" name="종각" lane="637016283#0_0" startPos="193.33" endPos="393.33" friendlyPos="true" lines="1">
+        <access lane="1207481551#0_0" pos="0.00" length="57.88" friendlyPos="1"/>
+        <access lane="184083117_0" pos="0.00" length="57.88" friendlyPos="1"/>
+        <access lane="184083199#5_0" pos="17.18" length="82.43" friendlyPos="1"/>
+        <access lane="184083199#7_0" pos="33.78" length="36.36" friendlyPos="1"/>
+        <access lane="474532059#4_0" pos="184.70" length="5.47" friendlyPos="1"/>
+    </busStop>
+    <busStop id="8414031473" name="시청" lane="637016267_0" startPos="215.09" endPos="415.09" friendlyPos="true" lines="1">
+        <access lane="-198564935_0" pos="0.00" length="44.54" friendlyPos="1"/>
+        <access lane="117914849#1_0" pos="60.92" length="36.94" friendlyPos="1"/>
+        <access lane="619147732_0" pos="9.55" length="37.25" friendlyPos="1"/>
+        <access lane="908622900#0_0" pos="69.50" length="33.85" friendlyPos="1"/>
+        <access lane="908622900#1_0" pos="8.23" length="24.90" friendlyPos="1"/>
+    </busStop>
+</additional>

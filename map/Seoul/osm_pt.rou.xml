@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-13 23:30:54.612616 by osmWebWizard.py UNKNOWN
+<configuration>
+    <net-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/osm.net.xml.gz"/>
+    <ptlines-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/osm_ptlines.xml"/>
+    <ptstops-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/osm_stops.add.xml"/>
+    <output-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/osm_pt.rou.xml"/>
+    <stopinfos-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/stopinfos.xml"/>
+    <routes-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/vehroutes.xml"/>
+    <trips-file value="/opt/homebrew/Cellar/sumo/1.20.0/share/sumo/tools/2025-12-13-23-30-44/trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_subway_1:0" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="70.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="223.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:1" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="53.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="204.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:2" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="62.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="224.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:3" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="48.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="206.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:4" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="97.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="249.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:5" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="91.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="254.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:6" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="83.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="254.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:10" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="54.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="207.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:11" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="49.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="208.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:7" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="117.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="288.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:8" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="86.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="267.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:13" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="98.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="250.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:14" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="53.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="216.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:9" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="120.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="299.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:12" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="112.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="300.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:15" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="105.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="258.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:18" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="57.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="219.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_2:0" color="51,162,61" edges="672454243" >
+        <stop busStop="1797562528" duration="20" until="75.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:19" color="0,93,170" edges="637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="82.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="270.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:16" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="125.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="323.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:20" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="80.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="232.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:21" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="56.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="218.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_2:1" color="51,162,61" edges="628689299" >
+        <stop busStop="5935738062" duration="20" until="53.0"/> <!-- 시청 -->
+        <stop busStop="5935738081" duration="20" until="116.0"/> <!-- 을지로입구 -->
+    </route>
+    <route id="pt_subway_1:17" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="178.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="377.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:22" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="104.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="257.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:23" color="0,93,170" edges="637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="51.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="259.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:26" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="56.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="220.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:24" color="0,93,170" edges="637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="99.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="303.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:27" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="106.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="259.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:25" color="0,93,170" edges="637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="51.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="266.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:28" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="56.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="218.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:29" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="105.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="257.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:31" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="111.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="327.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:32" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="103.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="328.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:30" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="56.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="220.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:33" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="106.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="258.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:34" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="109.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="336.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:35" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="57.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="220.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:36" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="87.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="322.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:38" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="106.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="259.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:37" color="0,93,170" edges="379994110 637016272#1 379994106 379994149#0 -379994152#0 637016278#1" >
+        <stop busStop="3833430101" duration="20" until="128.0"/> <!-- 시청 -->
+        <stop busStop="3833429822" duration="20" until="359.0"/> <!-- 종각 -->
+    </route>
+    <route id="pt_subway_1:39" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="56.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="220.0"/> <!-- 시청 -->
+    </route>
+    <route id="pt_subway_1:40" color="0,93,170" edges="637016283#0 -379994149#1 379994152#1 379994103 637016267" >
+        <stop busStop="660871450" duration="20" until="103.0"/> <!-- 종각 -->
+        <stop busStop="8414031473" duration="20" until="256.0"/> <!-- 시청 -->
+    </route>
+    <flow id="pt_subway_1:0" type="pt_subway" route="pt_subway_1:0" begin="3.0" end="3603.0" period="600" line="1:0" >
+        <param key="name" value="수도권 전철 1호선 경부·장항 계통: 천안 → 청량리 급행"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:1" type="pt_subway" route="pt_subway_1:1" begin="15.0" end="3615.0" period="600" line="1:1" >
+        <param key="name" value="수도권 전철 1호선 경부·장항 계통: 청량리 → 신창 급행"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:2" type="pt_subway" route="pt_subway_1:2" begin="15.0" end="3615.0" period="600" line="1:2" >
+        <param key="name" value="수도권 전철 1호선 경부·장항 계통: 신창 → 청량리 급행"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:3" type="pt_subway" route="pt_subway_1:3" begin="26.0" end="3626.0" period="600" line="1:3" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 양주 → 구로"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:4" type="pt_subway" route="pt_subway_1:4" begin="37.0" end="3637.0" period="600" line="1:4" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 동두천 → 인천 급행"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:5" type="pt_subway" route="pt_subway_1:5" begin="47.0" end="3647.0" period="600" line="1:5" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 인천 → 양주"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:6" type="pt_subway" route="pt_subway_1:6" begin="58.0" end="3658.0" period="600" line="1:6" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 인천 → 의정부"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:10" type="pt_subway" route="pt_subway_1:10" begin="132.0" end="3732.0" period="600" line="1:10" >
+        <param key="name" value="수도권 전철 1호선 경부·장항 계통: 청량리 → 천안"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:11" type="pt_subway" route="pt_subway_1:11" begin="143.0" end="3743.0" period="600" line="1:11" >
+        <param key="name" value="수도권 전철 1호선: 동묘앞 → 인천"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:7" type="pt_subway" route="pt_subway_1:7" begin="87.0" end="3687.0" period="600" line="1:7" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통 급행: 인천 → 동두천 급행"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:8" type="pt_subway" route="pt_subway_1:8" begin="119.0" end="3719.0" period="600" line="1:8" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 인천 → 동두천"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:13" type="pt_subway" route="pt_subway_1:13" begin="154.0" end="3754.0" period="600" line="1:13" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 동두천 → 부평"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:14" type="pt_subway" route="pt_subway_1:14" begin="200.0" end="3800.0" period="600" line="1:14" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 양주 → 부평"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:9" type="pt_subway" route="pt_subway_1:9" begin="150.0" end="3750.0" period="600" line="1:9" >
+        <param key="name" value="수도권 전철 1호선: 인천 → 동묘앞"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:12" type="pt_subway" route="pt_subway_1:12" begin="160.0" end="3760.0" period="600" line="1:12" >
+        <param key="name" value="수도권 전철 1호선 경원·경부 계통: 구로 → 양주"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:15" type="pt_subway" route="pt_subway_1:15" begin="213.0" end="3813.0" period="600" line="1:15" >
+        <param key="name" value="수도권 전철 1호선 경원·경부·장항 계통: 광운대 → 천안"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:18" type="pt_subway" route="pt_subway_1:18" begin="263.0" end="3863.0" period="600" line="1:18" >
+        <param key="name" value="수도권 전철 1호선: 양주 → 서울역"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_2:0" type="pt_subway" route="pt_subway_2:0" begin="437.0" end="4037.0" period="600" line="2:0" >
+        <param key="name" value="서울 지하철 2호선: 외선순환"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_subway_1:19" type="pt_subway" route="pt_subway_1:19" begin="253.0" end="3853.0" period="600" line="1:19" >
+        <param key="name" value="수도권 전철 1호선: 서울역 → 양주"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_1:16" type="pt_subway" route="pt_subway_1:16" begin="212.0" end="3812.0" period="600" line="1:16" >
+        <param key="name" value="수도권 전철 1호선 경원·경부·장항 계통: 천안 → 광운대"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:20" type="pt_subway" route="pt_subway_1:20" begin="303.0" end="3903.0" period="600" line="1:20" >
+        <param key="name" value="수도권 전철 1호선: 동묘앞 → 서동탄"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_subway_1:21" type="pt_subway" route="pt_subway_1:21" begin="329.0" end="3929.0" period="600" line="1:21" >
+        <param key="name" value="수도권 전철 1호선: 청량리 → 서동탄"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_2:1" type="pt_subway" route="pt_subway_2:1" begin="483.0" end="4083.0" period="600" line="2:1" >
+        <param key="name" value="서울 지하철 2호선: 내선순환"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:17" type="pt_subway" route="pt_subway_1:17" begin="222.0" end="3822.0" period="600" line="1:17" >
+        <param key="name" value="수도권 전철 1호선 경부·장항 계통: 천안 → 청량리"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:22" type="pt_subway" route="pt_subway_1:22" begin="345.0" end="3945.0" period="600" line="1:22" >
+        <param key="name" value="수도권 전철 1호선: 청량리 → 구로"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_1:23" type="pt_subway" route="pt_subway_1:23" begin="351.0" end="3951.0" period="600" line="1:23" >
+        <param key="name" value="수도권 전철 1호선: 구로 → 청량리"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_1:26" type="pt_subway" route="pt_subway_1:26" begin="394.0" end="3994.0" period="600" line="1:26" >
+        <param key="name" value="수도권 전철 1호선 경원·경부 계통: 의정부 → 서동탄"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:24" type="pt_subway" route="pt_subway_1:24" begin="367.0" end="3967.0" period="600" line="1:24" >
+        <param key="name" value="수도권 전철 1호선: 서동탄 → 동묘앞"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:27" type="pt_subway" route="pt_subway_1:27" begin="409.0" end="4009.0" period="600" line="1:27" >
+        <param key="name" value="수도권 전철 1호선 경원·경부 계통: 광운대 → 구로"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_1:25" type="pt_subway" route="pt_subway_1:25" begin="416.0" end="4016.0" period="600" line="1:25" >
+        <param key="name" value="수도권 전철 1호선: 서동탄 → 청량리"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_1:28" type="pt_subway" route="pt_subway_1:28" begin="460.0" end="4060.0" period="600" line="1:28" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 연천 → 인천"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:29" type="pt_subway" route="pt_subway_1:29" begin="476.0" end="4076.0" period="600" line="1:29" >
+        <param key="name" value="수도권 전철 1호선 경원·경부 계통: 연천 → 구로"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:31" type="pt_subway" route="pt_subway_1:31" begin="418.0" end="4018.0" period="600" line="1:31" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 구로 → 연천"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:32" type="pt_subway" route="pt_subway_1:32" begin="429.0" end="4029.0" period="600" line="1:32" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 인천 → 연천"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:30" type="pt_subway" route="pt_subway_1:30" begin="526.0" end="4126.0" period="600" line="1:30" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 연천 → 부평"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:33" type="pt_subway" route="pt_subway_1:33" begin="542.0" end="4142.0" period="600" line="1:33" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 소요산 → 인천"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:34" type="pt_subway" route="pt_subway_1:34" begin="485.0" end="4085.0" period="600" line="1:34" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 인천 → 소요산"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:35" type="pt_subway" route="pt_subway_1:35" begin="592.0" end="4192.0" period="600" line="1:35" >
+        <param key="name" value="수도권 전철 1호선 경원·경부·장항 계통: 광운대 → 신창"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_1:36" type="pt_subway" route="pt_subway_1:36" begin="508.0" end="4108.0" period="600" line="1:36" >
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:38" type="pt_subway" route="pt_subway_1:38" begin="608.0" end="4208.0" period="600" line="1:38" >
+        <param key="name" value="수도권 전철 1호선 경원·경부 계통: 광운대 → 서동탄"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:37" type="pt_subway" route="pt_subway_1:37" begin="533.0" end="4133.0" period="600" line="1:37" >
+        <param key="name" value="수도권 전철 1호선 경원·경부계통: 서동탄 → 광운대"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_1:39" type="pt_subway" route="pt_subway_1:39" begin="659.0" end="4259.0" period="600" line="1:39" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 의정부 → 인천"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_1:40" type="pt_subway" route="pt_subway_1:40" begin="675.0" end="4275.0" period="600" line="1:40" >
+        <param key="name" value="수도권 전철 1호선 경인·경원 계통: 양주 → 인천"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+</routes>
